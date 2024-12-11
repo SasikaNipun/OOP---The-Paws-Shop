@@ -28,9 +28,6 @@ public class mainFunctioPage extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         viewProduct_ = new javax.swing.JPanel();
-        viewProduct = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
         txtSearchBar_1 = new javax.swing.JTextField();
         cmdSearchButton_1 = new javax.swing.JButton();
         leftSideLogo4 = new javax.swing.JPanel();
@@ -41,35 +38,28 @@ public class mainFunctioPage extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextPane3 = new javax.swing.JTextPane();
         jPanel7 = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        cmdViewAllProduct_ = new javax.swing.JButton();
+        cmdAddNewProduct_ = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        viewAllProduct_ = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         addNewProduct_ = new javax.swing.JPanel();
-        addNewProduct = new javax.swing.JPanel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton4 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        txtSearchBar_ = new javax.swing.JTextField();
-        cmdSearchButton_ = new javax.swing.JButton();
-        leftSideLogo3 = new javax.swing.JPanel();
-        cmdBackCashier_1 = new javax.swing.JButton();
-        txtBackCashier_1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
-        jPanel4 = new javax.swing.JPanel();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -78,45 +68,16 @@ public class mainFunctioPage extends javax.swing.JFrame {
         jPanel3.setLayout(new java.awt.CardLayout());
 
         viewProduct_.setBackground(new java.awt.Color(51, 255, 153));
-        viewProduct_.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        viewProduct.setBackground(new java.awt.Color(0, 0, 0));
-        viewProduct.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Product ID", "Product Name", "Category", "Quantity"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jScrollPane3.setViewportView(jTable2);
-
-        viewProduct.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 848, 558));
-
-        viewProduct_.add(viewProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 860, 570));
 
         txtSearchBar_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchBar_1ActionPerformed(evt);
             }
         });
-        viewProduct_.add(txtSearchBar_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 710, 60));
 
         cmdSearchButton_1.setText("Search");
-        viewProduct_.add(cmdSearchButton_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 20, 140, 60));
 
         leftSideLogo4.setBackground(new java.awt.Color(255, 102, 102));
-        leftSideLogo4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cmdBackCashier_2.setBackground(new java.awt.Color(0, 0, 0));
         cmdBackCashier_2.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -128,23 +89,17 @@ public class mainFunctioPage extends javax.swing.JFrame {
                 cmdBackCashier_2ActionPerformed(evt);
             }
         });
-        leftSideLogo4.add(cmdBackCashier_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 47, 43));
 
         txtBackCashier_2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         txtBackCashier_2.setText("BACK");
-        leftSideLogo4.add(txtBackCashier_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 16, 65, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/User.png"))); // NOI18N
-        leftSideLogo4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 67, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Welcome");
-        leftSideLogo4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 163, 90, 26));
 
         jScrollPane4.setViewportView(jTextPane3);
-
-        leftSideLogo4.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 195, 163, -1));
 
         jPanel7.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -159,209 +114,305 @@ public class mainFunctioPage extends javax.swing.JFrame {
             .addGap(0, 9, Short.MAX_VALUE)
         );
 
-        leftSideLogo4.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 235, -1, -1));
-
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setText("View Item");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        cmdViewAllProduct_.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        cmdViewAllProduct_.setText("View All Product");
+        cmdViewAllProduct_.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                cmdViewAllProduct_ActionPerformed(evt);
             }
         });
-        leftSideLogo4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 262, 218, 40));
 
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton7.setText("Delete Product");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        cmdAddNewProduct_.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        cmdAddNewProduct_.setText("Add New Product");
+        cmdAddNewProduct_.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                cmdAddNewProduct_ActionPerformed(evt);
             }
         });
-        leftSideLogo4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 378, 218, 40));
 
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton8.setText("Add New Product");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton11.setText("-");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                jButton11ActionPerformed(evt);
             }
         });
-        leftSideLogo4.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 320, 218, 40));
 
-        viewProduct_.add(leftSideLogo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 720));
+        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton12.setText("Delete Product");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
-        jPanel3.add(viewProduct_, "card2");
+        jButton13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton13.setText("-");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
-        addNewProduct_.setBackground(new java.awt.Color(51, 255, 153));
-        addNewProduct_.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton14.setText("-");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
-        addNewProduct.setBackground(new java.awt.Color(255, 255, 255));
-        addNewProduct.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton15.setText("-");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        addNewProduct.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 82, 184, 39));
+        javax.swing.GroupLayout leftSideLogo4Layout = new javax.swing.GroupLayout(leftSideLogo4);
+        leftSideLogo4.setLayout(leftSideLogo4Layout);
+        leftSideLogo4Layout.setHorizontalGroup(
+            leftSideLogo4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(cmdBackCashier_2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(txtBackCashier_2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(59, 59, 59)
+                .addComponent(jLabel13))
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(59, 59, 59)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(cmdViewAllProduct_, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(cmdAddNewProduct_, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, leftSideLogo4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(leftSideLogo4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        leftSideLogo4Layout.setVerticalGroup(
+            leftSideLogo4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addGroup(leftSideLogo4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cmdBackCashier_2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(leftSideLogo4Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(txtBackCashier_2)))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel13)
+                .addGap(6, 6, 6)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(cmdViewAllProduct_, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(cmdAddNewProduct_, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        addNewProduct.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 139, 184, 39));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new java.awt.CardLayout());
 
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        addNewProduct.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 256, 184, 39));
+        viewAllProduct_.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("ALL PRODUCT");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        javax.swing.GroupLayout viewAllProduct_Layout = new javax.swing.GroupLayout(viewAllProduct_);
+        viewAllProduct_.setLayout(viewAllProduct_Layout);
+        viewAllProduct_Layout.setHorizontalGroup(
+            viewAllProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(viewAllProduct_Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(viewAllProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 902, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        viewAllProduct_Layout.setVerticalGroup(
+            viewAllProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(viewAllProduct_Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 566, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel1.add(viewAllProduct_, "card2");
+
+        addNewProduct_.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("ADD NEW PRODUCT");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Product ID");
-        addNewProduct.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 82, 188, 39));
+        jLabel3.setText("Product Name");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel4.setText("Product Name");
-        addNewProduct.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 139, 188, 39));
+        jLabel4.setText("Product ID");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Product Category");
-        addNewProduct.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 196, 188, 39));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel6.setText("Product Quantity");
-        addNewProduct.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 256, 188, 39));
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        addNewProduct.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 199, 184, 39));
-
-        jButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("ADD");
-        addNewProduct.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 321, 184, 39));
-
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
-
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("ADD NEW PRODUCT");
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("ADD");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField5)
+                    .addComponent(jTextField3)
+                    .addComponent(jTextField4)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE))
+                .addGap(241, 241, 241))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(296, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout addNewProduct_Layout = new javax.swing.GroupLayout(addNewProduct_);
+        addNewProduct_.setLayout(addNewProduct_Layout);
+        addNewProduct_Layout.setHorizontalGroup(
+            addNewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addNewProduct_Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                .addGroup(addNewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 902, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        addNewProduct_Layout.setVerticalGroup(
+            addNewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(addNewProduct_Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        addNewProduct.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 848, -1));
+        jPanel1.add(addNewProduct_, "card2");
 
-        addNewProduct_.add(addNewProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 860, 570));
-
-        txtSearchBar_.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSearchBar_ActionPerformed(evt);
-            }
-        });
-        addNewProduct_.add(txtSearchBar_, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 710, 60));
-
-        cmdSearchButton_.setText("Search");
-        addNewProduct_.add(cmdSearchButton_, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 20, 140, 60));
-
-        leftSideLogo3.setBackground(new java.awt.Color(255, 102, 102));
-        leftSideLogo3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        cmdBackCashier_1.setBackground(new java.awt.Color(0, 0, 0));
-        cmdBackCashier_1.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        cmdBackCashier_1.setForeground(new java.awt.Color(255, 255, 255));
-        cmdBackCashier_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Arrow L.png"))); // NOI18N
-        cmdBackCashier_1.setMaximumSize(new java.awt.Dimension(100, 50));
-        cmdBackCashier_1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmdBackCashier_1ActionPerformed(evt);
-            }
-        });
-        leftSideLogo3.add(cmdBackCashier_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 47, 43));
-
-        txtBackCashier_1.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        txtBackCashier_1.setText("BACK");
-        leftSideLogo3.add(txtBackCashier_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 16, 65, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/User.png"))); // NOI18N
-        leftSideLogo3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 67, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Welcome");
-        leftSideLogo3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 163, 90, 26));
-
-        jScrollPane2.setViewportView(jTextPane2);
-
-        leftSideLogo3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 195, 163, -1));
-
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 230, Short.MAX_VALUE)
+        javax.swing.GroupLayout viewProduct_Layout = new javax.swing.GroupLayout(viewProduct_);
+        viewProduct_.setLayout(viewProduct_Layout);
+        viewProduct_Layout.setHorizontalGroup(
+            viewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(viewProduct_Layout.createSequentialGroup()
+                .addComponent(leftSideLogo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(viewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(viewProduct_Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(txtSearchBar_1, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(cmdSearchButton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20))
+                    .addGroup(viewProduct_Layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 9, Short.MAX_VALUE)
+        viewProduct_Layout.setVerticalGroup(
+            viewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(viewProduct_Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(viewProduct_Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtSearchBar_1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmdSearchButton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addComponent(leftSideLogo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        leftSideLogo3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 235, -1, -1));
-
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("View Item");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        leftSideLogo3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 262, 218, 40));
-
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setText("Delete Product");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        leftSideLogo3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 378, 218, 40));
-
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton3.setText("Add New Product");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        leftSideLogo3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 320, 218, 40));
-
-        addNewProduct_.add(leftSideLogo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 720));
-
-        jPanel3.add(addNewProduct_, "card2");
+        jPanel3.add(viewProduct_, "card2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1200, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -372,32 +423,6 @@ public class mainFunctioPage extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmdBackCashier_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBackCashier_1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmdBackCashier_1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        viewProduct_.setVisible(false);
-        addNewProduct_.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void txtSearchBar_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchBar_ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSearchBar_ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        viewProduct_.setVisible(true);
-        addNewProduct_.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
     private void txtSearchBar_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchBar_1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchBar_1ActionPerformed
@@ -406,19 +431,35 @@ public class mainFunctioPage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cmdBackCashier_2ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        viewProduct_.setVisible(true);
+    private void cmdViewAllProduct_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdViewAllProduct_ActionPerformed
+        viewAllProduct_.setVisible(true);
         addNewProduct_.setVisible(false);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_cmdViewAllProduct_ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        viewProduct_.setVisible(false);
+    private void cmdAddNewProduct_ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdAddNewProduct_ActionPerformed
+        viewAllProduct_.setVisible(false);
         addNewProduct_.setVisible(true);
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_cmdAddNewProduct_ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -456,20 +497,17 @@ public class mainFunctioPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel addNewProduct;
     private javax.swing.JPanel addNewProduct_;
-    private javax.swing.JButton cmdBackCashier_1;
+    private javax.swing.JButton cmdAddNewProduct_;
     private javax.swing.JButton cmdBackCashier_2;
-    private javax.swing.JButton cmdSearchButton_;
     private javax.swing.JButton cmdSearchButton_1;
+    private javax.swing.JButton cmdViewAllProduct_;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -477,28 +515,21 @@ public class mainFunctioPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JPanel leftSideLogo3;
     private javax.swing.JPanel leftSideLogo4;
-    private javax.swing.JLabel txtBackCashier_1;
     private javax.swing.JLabel txtBackCashier_2;
-    private javax.swing.JTextField txtSearchBar_;
     private javax.swing.JTextField txtSearchBar_1;
-    private javax.swing.JPanel viewProduct;
+    private javax.swing.JPanel viewAllProduct_;
     private javax.swing.JPanel viewProduct_;
     // End of variables declaration//GEN-END:variables
 }
